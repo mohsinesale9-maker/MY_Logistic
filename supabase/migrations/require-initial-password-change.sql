@@ -1,0 +1,3 @@
+-- Run once on existing Supabase projects.
+ALTER TABLE app_user
+  ADD COLUMN IF NOT EXISTS must_change_password BOOLEAN NOT NULL DEFAULT false;
